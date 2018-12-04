@@ -1,5 +1,6 @@
 from __future__ import absolute_import
 from my_celery.celery import app
+from my_celery.minePdf import convert_pdf, extractText
 import time, requests
 import sqlalchemy
 
@@ -28,9 +29,17 @@ db = sqlalchemy.create_engine(
 @app.task
 def mine_pdf(self, i):
     r = requests.get(i)
-    # mine content from the pdf here
+    """ download pdf from cloud storage here  """
+    # name_of_file = XYZ
+    """ mine content from the pdf here 
     
-    # prepare insert statement for mined json
+        [1] first extract images from pdf doc
+        [2] then extract text from the images
+    """
+    convert_pdf(name_of_file+".pdf","./",400)
+    minedInvoice = extractText(name_of_file)
+    
+    """ prepare insert statement for mined json """
     insertStatement = sqlalchemy.text(
     "INSERT INTO invoices (invoice)"
     " VALUES (:minedInvoice)"
