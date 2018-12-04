@@ -8,7 +8,7 @@
 
 ## To Test Pdf Mining USE: 
 i. Put invoice pdf with name "invoice" in same folder. <br/>
-ii. run test=minedPdf.py <br/>
+ii. run python test-minedPdf.py in your terminal<br/>
 iii. collect JSON script fron same folder or check the output printed in the console. <br/>
 
 In future work, a program will be written to convert multi page PDF to single page many PDFs for text extraction. The current source code only handles single page pdfs
