@@ -1,2 +1,7 @@
 celery==4.0.2
 requests
+pypdf2
+cv2
+pytesseract
+numpy
+wand
