@@ -1,10 +1,10 @@
 # Dependencies and running program
 
-## Required python libraries are:
-1. Wand (for wand installation you need ImageMagic 6.9.x.x) NOTE: ImageMagic 7.xxx will not work for wand. <br/>
-2. pytesseract (You will need to install tesseract and add enviroment path for tesseract) <br/>
-3. OpenCV for python. <br/>
-4. pyPDF2 <br/>
+## Procedure to install dependent libraries:
+1. Install Cmake <br/>
+2. Install Visual studio 15 or 17 with C++ compiler <br/>
+3. Install ImageMagick 6.9.x.x (Don't install version 7.x.x as it is not compatible with wand) ImageMagic 7.xxx will not work for wand. <br/>
+4. Open terminal or cmd and run ```pip install requirements.txt``` <br/>
 
 ## To Test Pdf Mining USE: 
 i. Put invoice pdf with name "invoice" in same folder. <br/>
@@ -34,7 +34,7 @@ In future work, a program will be written to convert multi page PDF to single pa
 }
 ```
 
-### Current WIP is improving the output of current program to return a JSON of the following format:
+### Output of current program returns a JSON in the following format:
 ```
 {
     "Seller Email": "sales@insightcom",
