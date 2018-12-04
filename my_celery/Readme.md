@@ -4,11 +4,11 @@
 1. Install Cmake <br/>
 2. Install Visual studio 15 or 17 with C++ compiler <br/>
 3. Install ImageMagick 6.9.x.x (Don't install version 7.x.x as it is not compatible with wand) ImageMagic 7.xxx will not work for wand. <br/>
-4. Open terminal or cmd and run ```pip install requirements.txt``` <br/>
+4. Open terminal or cmd and run ```pip install requirements.txt``` to install the dependencies of the application.<br/>
 
-## To Test Pdf Mining USE: 
+## To Test the Pdf Mining Module, USE: 
 i. Put invoice pdf with name "invoice" in same folder. <br/>
-ii. run python test-minedPdf.py in your terminal<br/>
+ii. run ```python test-minedPdf.py``` in your terminal<br/>
 iii. collect JSON script fron same folder or check the output printed in the console. <br/>
 
 In future work, a program will be written to convert multi page PDF to single page many PDFs for text extraction. The current source code only handles single page pdfs
