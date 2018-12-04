@@ -25,27 +25,6 @@ In future work, a program will be written to convert multi page PDF to single pa
     "Buyer's Account": "TC-07546",
     "Date of purchase": "21/08/2018",
     "Total Price": "2433.40",
-    "Item's Billed": {
-        "NLP Platform Credits": "1000",
-        "Basic service fee": "1000",
-        "Invoice Processing": "100",
-        "Policy Documents Processing": "16"
-    }
-}
-```
-
-### Output of current program returns a JSON in the following format:
-```
-{
-    "Seller Email": "sales@insightcom",
-    "Vat-No": "0158653",
-    "Seller address": "Test Town, Test City",
-    "Tel#": "010-012-6359",
-    "Buyer's Address": "9 2\u2122 Drive, Dave County",
-    "Buyer's Name": "Titan Core",
-    "Buyer's Account": "TC-07546",
-    "Date of purchase": "21/08/2018",
-    "Total Price": "2433.40",
     "Item's Billed": [
         {
             "Item":"NLP Platform Credits",
