@@ -165,7 +165,7 @@ def extractText(name_of_file):
     return json.dumps(dict)
 
 # test file with data to be mined
-name_of_file = "invoice"
+name_of_file = "sample_invoice"
 # convert pdf to image files
 convert_pdf(name_of_file+".pdf","./",400)
 # extract text from images
