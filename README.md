@@ -1,9 +1,9 @@
 # PDF Text Miner
-This Python module is capable of processing an invoice file and extracting text from it. The output returned is in standard json format (RFC 8259). At the time of writing, this module supports single page pdf files.
+This Python application is capable of processing an invoice file and extracting text from it. The output returned is in standard json format (RFC 8259). At the time of writing, this module supports single page pdf files.
 
-Example use-cases of such a module will be in data-connectors for businesses intending to build data warehouses or analytics capabilities from data in their current paper based solutions. 
+Example use-cases of such an application will be in data-connectors for businesses intending to build data warehouses or analytics capabilities from data in their current paper based solutions. 
 
-This module extracts the following information from the invoice: 
+This module extracts the following information from invoices: 
 * Billed By
     * Address
     * Name
@@ -20,6 +20,9 @@ This module extracts the following information from the invoice:
     * Date Invoiced
     * Invoice total   
     * VAT Percentage
+
+An example format of invoices that can be processed by this application looks like:
+![Image description](sample.png)
 
 ## Dependencies and running program
 
